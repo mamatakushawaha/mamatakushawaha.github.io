@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./Templet1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="admin">
+            <div class="admin-img">
+                <div class="imgs">
+                    <img src="./images/beauty.png">
+                </div>
+                <div class="intro">
+                    <h2>Application</h2>
+                    <p>Admin Details</p>
+                </div>
+            </div>
+            
+            <div class="menu">
+                <h4>General</h4><hr>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-gauge-high"></i>Dashboard</a></li>
+                    <li><a href=""><i class="fa-solid fa-clock"></i>Widgets</a></li>
+                    <li><a href=""><i class="fa-brands fa-elementor"></i>Element</a></li>
+                    <li><a href=""><i class="fa-solid fa-table"></i>Tables</a></li>
+                    <li><a href=""><i class="fa-brands fa-app-store-ios"></i>Apps</a></li>
+                    <li><a href=""><i class="fa-solid fa-table-list"></i>Pricing Tables</a></li>
+                    <li><a href=""><i class="fa-solid fa-square-phone"></i>Contact</a></li>
+                    <li><a href=""><i class="fa-regular fa-file-lines"></i>Additional Pages</a></li>
+                    <li><a href=""><i class="fa-solid fa-location-dot"></i>Map</a></li>
+                    <li><a href=""><i class="fa-solid fa-chart-line"></i>Chart</a></li>
+                    <li><a href=""><i class="fa-solid fa-gear"></i>Setting</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="details">
+            <div class="header">
+                <div class="div1">
+                <ul>
+                    <li><i class="fa-solid fa-bars fa-2xl"></i></li>
+                    <!--<li><img src="./images/favicon.png"></li>-->
+                
+                </ul>
+              </div>
+              <div class="div2"></div>
+              <div class="div3">
+                <ul>
+                    <li><i class="fa-solid fa-bell fa-xl" style="color: #fff;"></i></li>
+                    <li><i class="fa-regular fa-circle-question fa-lg " style="color: #fff;"></i></li>
+                    <li><i class="fa-solid fa-square-envelope fa-xl " style="color: #fff;"></i></li>
+                    <li><h2>Mamta</h2></li>
+                </ul>
+              </div>
+        
+            </div>
+            <div class="info">
+                <h1 style="padding: 3px;">DASHBOARD</h1>
+            </div>
+            <div class="block">
+                <div class="card1">
+                <div class="box">
+                    <div class="icon"></div>
+                    <div class="information"></div>
+                </div>
+                <div class="box">
+                    <div class="icon"></div>
+                    <div class="information"></div>
+                </div>
+                <div class="box">
+                    <div class="icon"></div>
+                    <div class="information"></div>
+                </div>
+                <div class="box">
+                    <div class="icon"></div>
+                    <div class="information"></div>
+                </div>
+                </div>
+                <div class="card2">
+                <div class="box">
+                    <div class="card2-box2-icon"></div>
+                    <div class="card2-box2-info">
+                        <div class="info1"></div>
+                        <div class="info2"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card2-box2-icon"></div>
+                    <div class="card2-box2-info">
+                        <div class="info1"></div>
+                        <div class="info2"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card2-box2-icon"></div>
+                    <div class="card2-box2-info">
+                        <div class="info1"></div>
+                        <div class="info2"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card2-box2-icon"></div><!--ctrl+/=short key for comment-->
+                    <div class="card2-box2-info">
+                        <div class="info1"></div>
+                        <div class="info2"></div>
+                    </div>
+                </div>
+               </div>
+               <div class="card3">
+                <h1>Chart information</h1>
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

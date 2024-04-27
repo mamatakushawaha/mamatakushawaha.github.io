@@ -1,18 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            font-family: sans-serif;
         }
-        .header{
+        body{
+            background: #dfe9f5;
+        }
+        .navbar{
+            width: 29%;
+        }
+        nav{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 90px;
+            background: rgb(7, 54, 54);
+            overflow: hidden;
+            transition: width 0.2s linear;
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+            
+        }
+        .logo{
+            text-align: center;
+            display: flex;
+            transition: all 0.5s ease;
+            margin: 10px 0 0 10px;
+        }
+        .logo img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .logo span{
+            font-weight: bold;
+            padding-left: 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: whitesmoke;
+        }
+        a{
+            position: relative;
+            color: rgb(124, 112, 112);
+            font-size: 14px;
+            color: whitesmoke;
+            display: table;
+            width: 300px;
+            padding: 10px;
+        }
+        .fas{
+            position: relative;
+            width: 70px;
+            height: 40px;
+            top: 14px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .nav-item{
+            position: relative;
+            top: 12px;
+            margin-left: 10px;
+        }
+        a:hover{
+            background: #eee;
+            color: black;
+        }
+        .logo .nav-item:hover{
+            color: black;
+        }
+        
+        nav:hover{
+            width: 280px;
+            transition: all 0.5s ease;
+        }
+        .logout{
+            position: absolute;
+            bottom: 0;
+        }
+        /* detail */
+        .details{
+            width: 75%;
+            margin-left: 23%;
+        }
+        .details .header{
+            
             height: 4vh;
             width: 100%;
             margin: 2% 6%;
@@ -22,23 +106,29 @@
         .header i{
             padding-top: 15px;
         }
-        .container{
+        .details .container{
             height: 70vh;
             width: 100%;
             background-color: rgb(6, 41, 41);
             display: flex;
-            gap: 20px;
+            gap: 10px;
             margin-top: 2px;
         }
         .info{
             height: 50vh;
-            width: 40%;
+            width: 45%;
             color: white;
-            padding: 5% 5%;
+            padding: 4% 4%;
             margin-top: 10px;
         }
+        .info h2{
+            margin-left: 10px;
+            width: 100%;
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
         .info li{
-            margin-left: 70px;
+            margin-left: 50px;
             font-size: 23px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
@@ -52,7 +142,7 @@
             height: 15vh;
             width: 80%;
             padding-top: 17%;
-            padding-left: 28%;
+            padding-left: 22%;
             padding-right: 10%;
             display: flex;
             justify-content: space-between;
@@ -70,16 +160,63 @@
          padding-top: 35px;
          padding-left: 18px;
         }
+
     </style>
 </head>
 <body>
+    <div class="navbar">
+    <nav>
+        <ul>
+            <li>
+                <a href="" class="logo">
+                    <img src="./images/img1.jpg" alt="">
+                    <span class="nav-item">mamta kumari</span>
+                </a>
+            </li>
+            <li><a href="#">
+                <i class="fas fa-home"></i>
+                <span class="nav-item">Home</span>
+            </a></li>
+            <li><a href="#">
+                <i class="fas fa-user"></i>
+                <span class="nav-item">Profile</span>
+            </a></li>
+            <li><a href="#">
+                <i class="fas fa-wallet"></i>
+                <span class="nav-item">Wallet</span>
+            </a></li>
+            <li><a href="#">
+                <i class="fas fa-chart-bar"></i>
+                <span class="nav-item">Analytics</span>
+            </a></li>
+            <li><a href="#">
+                <i class="fas fa-tasks"></i>
+                <span class="nav-item">Task</span>
+            </a></li>
+            <li><a href="">
+                <i class="fas fa-cog"></i>
+                <span class="nav-item">Seeting</span>
+            </a></li>
+            <li><a href="">
+                <i class="fas fa-question-circle"></i>
+                <span class="nav-item">Help</span>
+            </a></li>
+            <li><a href="" class="logout">
+                <i class="fas fa-sign-out-alt"></i>
+                <span class="nav-item">Log out</span>
+            </a></li>
+        </ul>
+    </nav>
+</div>
+    <div class="details">
     <div class="header">
         <i class="fa-solid fa-laptop-code fa-2xl" aria-hidden="true"></i>
         <h1>Mamta Kumari</h1>
     </div>
     <div class="container">
+        
         <div class="info">
-            <h1>FULL STACK DEVELOPER</h1>
+            <h2>FULL STACK DEVELOPER</h2>
             <ul>
                 <li>Software Basic</li>
                 <li>web browser</li>
@@ -130,6 +267,6 @@
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>
-

@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(145deg,#151fa3,#540058);
+}
+.main{
+    max-height: 580px;
+    width:390px;
+    margin:30vh auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.list-head{
+    padding: 3% 5%;
+    margin-bottom: 10px;
+}
+.list-head h2{
+    margin: 10px 30px 10px;
+    font-size: 28px;
+    font-weight: 800;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.box{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #bebfc2;
+border-radius: 30px;
+padding-left: 20px;
+margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    background: #dd311e;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 40px;
+    user-select: none;
+    cursor: pointer;  
+    position: relative;
+
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background:radial-gradient(white,rgb(65, 64, 64));
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 8px;
+}
+/* ul li .checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li .checked::before{
+    background-color: #dd311e;
+
+} */
+ul li span{
+position: absolute;
+right: 0;
+top: 5px;
+width: 35px;
+height: 35px;
+border-radius: 50%;
+font-size: 22px;
+color: #555;
+line-height: 40px;
+text-align: center;
+}
+ul li span:hover{
+    background: orangered;
+    color: white;
+}
